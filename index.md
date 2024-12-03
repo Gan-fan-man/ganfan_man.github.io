@@ -16,7 +16,7 @@
 > 我会不时维护这个网站或发布文章  
 > 時々、このウェブサイトをメンテナンスしたり、記事を公開したりします
 >   
-> We adopt the **GNU General Public License V3.0 protocol**. You can use the templates of this website.  
+> We adopt the **GNU General Public License V3.0** protocol. You can use the templates of this website.  
 > 我们采用 **GNU General Public License V3.0**协议 您可以使用该网站的模板  
 > **GNU General Public License V3.0**を採用しています このWebサイトのテンプレートをご利用いただけます  
 >   
