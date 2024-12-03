@@ -36,5 +36,5 @@
 > Web サイトが github.io にマウントされていない場合、Web サイトはオープンソースのままになります  
 >   
 > This document will be mainly written using [Markdown](https://www.markdownguide.org) syntax. Thanks to syntax such as Markdown for injecting vitality into the open source ecosystem and simplification of source code writing.  
-> 本文档将主要使用[Markdown语法](https://markdown.com.cn)语法编写 感谢诸如Markdown这样的语法为开源生态与源码编写简易化注入活力  
+> 本文档将主要使用[Markdown](https://markdown.com.cn)语法编写 感谢诸如Markdown这样的语法为开源生态与源码编写简易化注入活力  
 > このドキュメントは主に [Markdown](https://www.markdownguide.org) 構文を使用して記述されます。Markdown などの構文は、オープンソース エコシステムに活力を与え、ソース コードの記述を簡素化するためのものです  
