@@ -54,6 +54,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-search (0.2.0)
+      jekyll (>= 3)
     jekyll-seo-tag (2.6.1)
       jekyll (>= 3.3, < 5.0)
     jekyll-sitemap (1.4.0)
@@ -100,6 +102,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.1)
   jekyll-compose
+  jekyll-search
   not-pure-poole!
   rake (~> 12.0)
 
