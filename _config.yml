@@ -1,10 +1,11 @@
 title: Ganfan_man
 description: This project is Ganfan_man’s personal website
 url: https://gan-fan-man.github.io
+baseurl: /
 avatar: avatar.jpeg
-paginate: 5
-permalink: pretty
 cover_image: bg.jpeg
+paginate: 10
+permalink: pretty
 
 plugins:
   - jekyll-gist
@@ -14,9 +15,9 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
+  -.editorconfig
+  -.git
+  -.jekyll-cache
   - Gemfile
   - Gemfile.lock
   - LICENSE.md
@@ -27,17 +28,16 @@ exclude:
 twitter:
   username: Ganfan_man
   card: summary
-logo: logo.png
-social:
-  name: Ganfan_man
-  links:
-    - https://twitter.com/Ganfan_man
-    - https://github.com/Gan-fan-man
 
-lang: zh-cn
+social:
+  - {name: Twitter, url: https://twitter.com/Ganfan_man}
+  - {name: GitHub, url: https://github.com/Gan-fan-man}
+
+lang: zh-Hans
+
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 author:
   name: Ganfan_man
