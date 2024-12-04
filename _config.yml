@@ -1,13 +1,11 @@
-# Setup
 title: Ganfan_man
 description: This project is Ganfan_man’s personal website
-url: https://Gan-fan-man.github.io
+url: https://gan-fan-man.github.io
 avatar: avatar.jpeg
 paginate: 5
 permalink: pretty
 cover_image: bg.jpeg
 
-# Gems
 plugins:
   - jekyll-gist
   - jekyll-paginate
@@ -15,7 +13,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Optimize Jekyll
 exclude:
   - .editorconfig
   - .git
@@ -27,7 +24,6 @@ exclude:
   - scripts/
   - not-pure-poole.gemspec
 
-# Optimize Jekyl SEO Tag
 twitter:
   username: Ganfan_man
   card: summary
@@ -43,15 +39,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 
-# Options
-
-# Replace this value and uncomment to enable Google Analytics tracking
-# google_analytics: UA-000000-0
-
-# Replace this value and uncomment to enable Disqus
-# disqus: xxxxxx
-
-# Specify the author for blog posts
 author:
   name: Ganfan_man
   url: https://github.com/Gan-fan-man
