@@ -15,15 +15,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  -.editorconfig
-  -.git
-  -.jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-  - scripts/
-  - not-pure-poole.gemspec
+  - ['.editorconfig', '.git', '.jekyll-cache', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md','scripts/', 'not-pure-poole.gemspec']
 
 twitter:
   username: Ganfan_man
