@@ -1,5 +1,5 @@
-title: Ganfan_man
-description: This project is Ganfan_man’s personal website
+title: "Ganfan_man"
+description: "This project is Ganfan_man's personal website"
 url: https://gan-fan-man.github.io
 baseurl: /
 avatar: avatar.jpeg
@@ -18,7 +18,7 @@ exclude:
   - ['.editorconfig', '.git', '.jekyll-cache', 'Gemfile', 'Gemfile.lock', 'LICENSE.md', 'README.md','scripts/', 'not-pure-poole.gemspec']
 
 twitter:
-  username: Ganfan_man
+  username: "Ganfan_man"
   card: summary
 
 social:
@@ -32,6 +32,6 @@ sass:
   style: compressed
 
 author:
-  name: Ganfan_man
+  name: "Ganfan_man"
   url: https://github.com/Gan-fan-man
   email: Ganfan_man@protonmail.com
