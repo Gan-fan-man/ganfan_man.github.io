@@ -23,7 +23,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         inputs:
-          draft: ${{ steps.update_release_draft.outputs.draft }}name: Release notes
+          draft: ${{ steps.update_release_draft.outputs.draft }}
+          name: Release notes
 
 on:
   schedule:
