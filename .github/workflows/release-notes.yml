@@ -6,27 +6,6 @@ on:
       - master
   schedule:
     - cron: 0 19 * * *
-jobs:
-  update_release_draft:
-    runs-on: ubuntu-latest
-    env:
-      RUBY_VERSION: 3.3.6
-      JEKYLL_VERSION: 3.10.0
-    steps:
-      - name: Update release draft
-        uses: release-drafter/release-drafter@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        outputs:
-          draft: ${{ steps.update_release_draft.outputs.draft }}
-      - name: Post release draft
-        uses: github-actions/post-release-draft@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        inputs:
-          draft: ${{ steps.update_release_draft.outputs.draft }}
-          name: Release notes
-
 
 jobs:
   update_release_draft:
@@ -47,6 +26,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         inputs:
           draft: ${{ steps.update_release_draft.outputs.draft }}
+
   deploy_pages:
     runs-on: ubuntu-latest
     env:
@@ -57,7 +37,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Tree GITHUB_WORKSPACE directory
         run: tree $GITHUB_WORKSPACE
-      - name: Tree GITHUB_WORKSPACE directory
+      - name: Print GITHUB_WORKSPACE directory
         run: echo "$(tree $GITHUB_WORKSPACE)"
       - name: Deploy to GitHub Pages
         uses: github-pages/deploy@v1
@@ -65,5 +45,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          folder: .
+          folder: /
           target_branch: master
