@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+  schedule:
+    - cron: 0 19 * * *
 jobs:
   update_release_draft:
     runs-on: ubuntu-latest
@@ -26,12 +27,6 @@ jobs:
           draft: ${{ steps.update_release_draft.outputs.draft }}
           name: Release notes
 
-on:
-  schedule:
-    - cron: 0 19 * * *
-  push:
-    branches:
-      - master
 
 jobs:
   update_release_draft:
