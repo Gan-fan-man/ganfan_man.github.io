@@ -15,16 +15,15 @@ jobs:
       JEKYLL_VERSION: 3.10.0
     steps:
       - name: Update release draft
+        id: update_release_draft
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        outputs:
-          draft: ${{ steps.update_release_draft.outputs.draft }}
       - name: Post release draft
         uses: github-actions/post-release-draft@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        inputs:
+        with:
           draft: ${{ steps.update_release_draft.outputs.draft }}
 
   deploy_pages:
