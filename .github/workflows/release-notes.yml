@@ -18,7 +18,7 @@ jobs:
         id: update_release_draft
         uses: release-drafter/release-drafter@v5
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.gitpush }}
 
   deploy_pages:
     runs-on: ubuntu-latest
